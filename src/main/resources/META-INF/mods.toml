@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[33,)"
+license = "LGPLv3"
+issueTrackerURL = ""
+[[mods]]
+modId = "enhanced_celestials_mobifier_integration"
+version = "1.0"
+displayName = "Enhanced Celestials Mobifier Integration"
+displayURL = ""
+logoFile = "icon.png"
+credits = ""
+authors = "Corgi Taco"
+description = '''
+Mobifier integration for enhanced celestials
+'''
+[[dependencies.enhanced_celestials_mobifier_integration]]
+modId = "forge"
+mandatory = true
+versionRange = "[33.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enhanced_celestials_mobifier_integration]]
+modId = "mobifier"
+mandatory = true
+versionRange = "[1.1.3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enhanced_celestials_mobifier_integration]]
+modId = "enhancedcelestials"
+mandatory = true
+versionRange = "[2.0.9,)"
+ordering = "NONE"
+side = "BOTH"
