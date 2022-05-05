@@ -1,1 +1,1 @@
-
+# Enhanced Celestials Mobifier Integration

@@ -5,10 +5,10 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import corgitaco.enhancedcelestials.EnhancedCelestialsWorldData;
 import corgitaco.enhancedcelestials.LunarContext;
 import corgitaco.mobifier.common.condition.Condition;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.world.World;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
 
-import java.util.*;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class LunarEventCondition implements Condition {
@@ -26,7 +26,7 @@ public class LunarEventCondition implements Condition {
 
 
     @Override
-    public boolean passes(World world, LivingEntity livingEntity, boolean b, int i) {
+    public boolean passes(Level world, LivingEntity livingEntity, boolean b, int i) {
         LunarContext lunarContext = ((EnhancedCelestialsWorldData) world).getLunarContext();
         if (lunarContext == null) {
             return false;
